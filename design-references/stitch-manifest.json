@@ -1,0 +1,797 @@
+{
+  "project": {
+    "createTime": "2026-10-07T13:12:52.881677Z",
+    "designTheme": {
+      "bodyFont": "INTER",
+      "bodyFontFamily": "Inter",
+      "colorMode": "LIGHT",
+      "colorVariant": "FIDELITY",
+      "customColor": "#0d9488",
+      "designMd": "---\nname: Nexalis Workspace\ncolors:\n  surface: '#f8f9ff'\n  surface-dim: '#cbdbf5'\n  surface-bright: '#f8f9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#eff4ff'\n  surface-container: '#e5eeff'\n  surface-container-high: '#dce9ff'\n  surface-container-highest: '#d3e4fe'\n  on-surface: '#0b1c30'\n  on-surface-variant: '#3d4947'\n  inverse-surface: '#213145'\n  inverse-on-surface: '#eaf1ff'\n  outline: '#6d7a77'\n  outline-variant: '#bcc9c6'\n  surface-tint: '#006a61'\n  primary: '#00685f'\n  on-primary: '#ffffff'\n  primary-container: '#008378'\n  on-primary-container: '#f4fffc'\n  inverse-primary: '#6bd8cb'\n  secondary: '#565e74'\n  on-secondary: '#ffffff'\n  secondary-container: '#dae2fd'\n  on-secondary-container: '#5c647a'\n  tertiary: '#006194'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#007bb9'\n  on-tertiary-container: '#fdfcff'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#89f5e7'\n  primary-fixed-dim: '#6bd8cb'\n  on-primary-fixed: '#00201d'\n  on-primary-fixed-variant: '#005049'\n  secondary-fixed: '#dae2fd'\n  secondary-fixed-dim: '#bec6e0'\n  on-secondary-fixed: '#131b2e'\n  on-secondary-fixed-variant: '#3f465c'\n  tertiary-fixed: '#cce5ff'\n  tertiary-fixed-dim: '#93ccff'\n  on-tertiary-fixed: '#001d31'\n  on-tertiary-fixed-variant: '#004b73'\n  background: '#f8f9ff'\n  on-background: '#0b1c30'\n  surface-variant: '#d3e4fe'\ntypography:\n  headline-xl:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  headline-xl-mobile:\n    fontFamily: Inter\n    fontSize: 26px\n    fontWeight: '700'\n    lineHeight: 34px\n    letterSpacing: -0.015em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Inter\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '600'\n    lineHeight: 24px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 22px\n  body-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 18px\n  label-md:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 18px\n  label-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.02em\n  caption:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '500'\n    lineHeight: 14px\n    letterSpacing: 0.04em\n  code-num:\n    fontFamily: JetBrains Mono\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 18px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1rem\n  gutter-mobile: 0.75rem\n  margin: 1.5rem\n  margin-mobile: 1rem\n  space-xxs: 0.125rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 0.75rem\n  space-lg: 1rem\n  space-xl: 1.5rem\n  space-xxl: 2rem\n---\n\n## Brand & Style\n\nThis design system delivers a high-precision, utilitarian enterprise environment tailored for engineering, asset management, and operations teams at an international energy operator based in the UAE. \n\nThe aesthetic is Modern Corporate with calibrated functional density\u2014blending the clarity of modern engineering issue trackers with executive-grade poise. The visual tone projects stability, operational rigor, and regional authority:\n- Deep oceanic navies frame the application shell, grounding high-density workflows in visual permanence.\n- Pristine, neutral-cool canvas tones minimize cognitive strain across long operational shifts.\n- Vibrant maritime teals anchor primary actions, balancing energy-sector legacy with forward-leaning digital operations.\n\nThe interface rejects ornamental skeuomorphism and excessive glassmorphism. It prioritizes data integrity, sub-second visual scanning, clear visual state differentiation, and seamless localization readiness (including dual English/Arabic metrics and typography compatibility).\n\n## Colors\n\nThe palette establishes structural separation between navigational controls, working canvases, interactive states, and mission-critical telemetry.\n\n### Core Architecture\n- **Primary Teal (`#0d9488`)**: Dedicated to primary calls-to-action, active selection indicators, and key operational confirmations. Hover states scale to `#14b8a6`; pressed and focused states settle into `#0f766e`.\n- **Structural Navy (`#0f172a`, `#1e293b`)**: Confined to global navigation rails, primary headers, and high-level enterprise shell containers. It provides an unyielding contrast anchor against bright data tables.\n- **Secondary Accent (`#0284c7`)**: Used for analytical callouts, link navigation, active filters, and operational progress states.\n- **Neutral Scales (`#f8fafc`, `#f1f5f9`, `#e2e8f0`, `#64748b`, `#0f172a`)**: \n  - Canvas background: `#f8fafc`\n  - Elevated card surfaces: `#ffffff`\n  - Subtle borders and dividers: `#e2e8f0`\n  - Subdued metadata & secondary typography: `#64748b`\n  - High-emphasis body text: `#0f172a`\n\n### Semantic Status Tokens\nState badges require zero ambiguity across field tickets, drilling schedules, and capital expense pipelines:\n- **To Do / Draft**: Slate (`#64748b` on `#f1f5f9` tint, border `#cbd5e1`)\n- **In Progress / Active**: Sky Blue (`#0284c7` on `#e0f2fe` tint, border `#bae6fd`)\n- **In Review / Verification**: Amber (`#d97706` on `#fef3c7` tint, border `#fde68a`)\n- **Done / Operational**: Emerald (`#059669` on `#d1fae5` tint, border `#a7f3d0`)\n- **Blocked / Incident Critical**: Crimson (`#dc2626` on `#fee2e2` tint, border `#fecaca`)\n\n## Typography\n\nTypography centers on **Inter** to deliver optimum legibility across tabular datasets, hierarchical Gantt charts, operational boards, and multi-field inspection forms. Numerical metrics, equipment serial numbers, and financial ledger figures utilize **JetBrains Mono** with tabular lining figures enabled (`font-variant-numeric: tabular-nums`).\n\n### Hierarchy & Rhythm\n- **Page Titles & Module Headers (`headline-xl`, `headline-lg`)**: Bold, tightened kerning for assertive grounding of major workspace views.\n- **Section & Modal Headers (`headline-md`, `headline-sm`)**: Semi-bold, directly connecting action toolbars to corresponding record tables.\n- **Work Surface Text (`body-md`, `body-sm`)**: Tuned for dense data ingestion without text fatigue; precise 1.4-1.45x line-height ratios balance density with readability.\n- **Labels & Microcopy (`label-sm`, `caption`)**: Subtle uppercase tracking on captions (`0.04em`) reserved strictly for status classifications, table headers, and asset tier categorizations.\n\n## Layout & Spacing\n\nThe workspace leverages a persistent application framework consisting of a fixed 260px left global navigation sidebar (collapsible to 64px icon-only), an optional 320px contextual inspection panel on the right, and an agile, fluid central canvas.\n\n### Layout Mechanics\n- **Grid Architecture**: 12-column fluid grid across the central canvas with a 16px (`1rem`) gutter and 24px (`1.5rem`) outer margin on desktop screens (`>= 1024px`).\n- **Breakpoints**:\n  - `Desktop Wide (>= 1440px)`: Full 3-panel workflow (Navigation + Board/Table View + Detail Flyout).\n  - `Desktop Standard (1024px - 1439px)`: Detail views overlay as right slide-over drawers with backdrop tint.\n  - `Tablet (768px - 1023px)`: Left navigation collapses to icon rail; gutters reduce to 16px.\n  - `Mobile (< 768px)`: Navigation converts to an off-canvas drawer; columns stack to single-column streams with 12px margins and 8px gutters.\n- **Compact Density**: Core workflow interfaces (data grids, sub-task lists, comment logs) maintain a baseline unit of 4px. Element padding favors a compact vertical footprint (`0.375rem` to `0.5rem`) and wider horizontal padding (`0.75rem` to `1rem`) to keep operational tools rapid and scan-friendly.\n\n## Elevation & Depth\n\nVisual hierarchy relies on crisp, low-contrast borders combined with ultra-subtle, slate-tinted ambient shadows. Deep layered drop shadows are avoided to maintain professional clarity and prevent clutter in high-density data matrices.\n\n### Surface Elevation Scale\n- **Level 0 (Base Canvas)**: Background fill `#f8fafc`. Flat, non-elevated.\n- **Level 1 (Cards, Worktables, Panels)**: `#ffffff` surface, bounded by a 1px border (`#e2e8f0`). Shadow: `0 1px 2px 0 rgba(15, 23, 42, 0.05)`.\n- **Level 2 (Hovered Cards, Popovers, Segmented Controls)**: Bounded by 1px border (`#cbd5e1`). Shadow: `0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04)`.\n- **Level 3 (Dropdown Menus, Modals, Slide-over Drawers)**: 1px border (`#cbd5e1`). Shadow: `0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05)`.\n- **Dark Structural Surfaces (Sidebar & Shell)**: `#0f172a` with internal dividers rendered via `#1e293b` (1px solid), avoiding dark shadows in favor of crisp boundary lines.\n\n## Shapes\n\nThe design system incorporates **Soft** curvature (`roundedness: 1`), utilizing controlled 4px to 8px radiuses. This geometry reflects modern enterprise engineering tools: structural, disciplined, and optimized for space efficiency without the sterility of pure sharp corners or the casual playfulness of circular pill treatments.\n\n### Corner Radius Mapping\n- **Micro Elements (Checkboxes, Status Dots, Tags)**: `0.25rem` (4px).\n- **Controls & Interactive Inputs (Buttons, Inputs, Selects, Tab Triggers)**: `0.375rem` (6px).\n- **Cards, Modals, Table Containers, Flyout Shells**: `0.5rem` (8px).\n- **Avatars & Pure Status Indicators**: Fully rounded `9999px` strictly for user identity and presence tracking.\n\n## Components\n\n### Buttons\n- **Primary**: Solid background `#0d9488`, text `#ffffff`, border transparent. Focus ring: 2px offset with `#0d9488`. Hover: `#14b8a6`. Active: `#0f766e`.\n- **Secondary / Outline**: Background `#ffffff`, text `#0f172a`, border 1px solid `#e2e8f0`. Hover: background `#f1f5f9`, border `#cbd5e1`.\n- **Ghost / Tertiary**: Background transparent, text `#64748b`. Hover: background `#f1f5f9`, text `#0f172a`.\n- **Sizes**: Small (28px height, 12px font), Default (36px height, 14px font), Large (42px height, 15px font). Padding: horizontal `0.75rem` to `1rem`.\n\n### Status Badges & Chips\n- Compact, non-intrusive metadata capsules. Height: 22px; padding: 2px 8px; radius: 4px.\n- Styled as semi-transparent background tints (10-15% opacity) accompanied by matching 1px border and high-contrast foreground text matching semantic rules (Slate, Sky Blue, Amber, Emerald, Crimson).\n\n### Data Tables & Task Lists\n- **Header Rows**: Height 36px, background `#f8fafc`, typography `caption` uppercase, 1px bottom border `#e2e8f0`.\n- **Data Rows**: Height 44px (compact standard), background `#ffffff`, alternating row hover `#f8fafc`. Active row selection marked with a 3px left vertical indicator in primary teal (`#0d9488`).\n- **Dividers**: Crisp 1px `#f1f5f9` horizontal lines; vertical cell gridlines omitted to avoid visual noise.\n\n### Form Inputs & Selects\n- Height: 36px. Background: `#ffffff`. Border: 1px solid `#cbd5e1`. Internal padding: `0.5rem 0.75rem`.\n- Focus state: Border color `#0d9488` with an ambient glow (`box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15)`).\n- Error state: Border color `#dc2626` with red glow (`box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15)`).\n- Label placement: Top-aligned, 4px spacing, `label-sm` weight, color `#334155`.\n\n### Checkboxes & Radio Controls\n- Dimensions: 16px x 16px. Border: 1.5px solid `#94a3b8`.\n- Checked state: Background `#0d9488`, border `#0d9488`, icon checkmark white.\n- Indeterminate state: Primary teal background with centered 8px horizontal white bar.\n\n### Cards & Container Panels\n- Background: `#ffffff`. Border: 1px solid `#e2e8f0`. Radius: 8px.\n- Internal padding: `1rem` standard for workspace boards (Kanban columns: 12px padding; inner task cards: 12px padding with 8px vertical gap).\n\n### Workspace-Specific Modules\n- **Drilling & Project Milestone Bar**: Segmented horizontal meter using primary teal (`#0d9488`) for executed milestones, sky blue (`#0284c7`) for active segments, and light slate (`#e2e8f0`) for pending steps.\n- **UAE Timezone / Shift Header Widget**: Monospaced timestamp badge displaying `GST (UTC+4)` with live operational shift indicators inside the deep navy shell bar.",
+      "font": "INTER",
+      "headlineFont": "INTER",
+      "headlineFontFamily": "Inter",
+      "labelFont": "INTER",
+      "labelFontFamily": "Inter",
+      "namedColors": {
+        "background": "#f8f9ff",
+        "error": "#ba1a1a",
+        "error_container": "#ffdad6",
+        "inverse_on_surface": "#eaf1ff",
+        "inverse_primary": "#6bd8cb",
+        "inverse_surface": "#213145",
+        "on_background": "#0b1c30",
+        "on_error": "#ffffff",
+        "on_error_container": "#93000a",
+        "on_primary": "#ffffff",
+        "on_primary_container": "#f4fffc",
+        "on_primary_fixed": "#00201d",
+        "on_primary_fixed_variant": "#005049",
+        "on_secondary": "#ffffff",
+        "on_secondary_container": "#5c647a",
+        "on_secondary_fixed": "#131b2e",
+        "on_secondary_fixed_variant": "#3f465c",
+        "on_surface": "#0b1c30",
+        "on_surface_variant": "#3d4947",
+        "on_tertiary": "#ffffff",
+        "on_tertiary_container": "#fdfcff",
+        "on_tertiary_fixed": "#001d31",
+        "on_tertiary_fixed_variant": "#004b73",
+        "outline": "#6d7a77",
+        "outline_variant": "#bcc9c6",
+        "primary": "#00685f",
+        "primary_container": "#008378",
+        "primary_fixed": "#89f5e7",
+        "primary_fixed_dim": "#6bd8cb",
+        "secondary": "#565e74",
+        "secondary_container": "#dae2fd",
+        "secondary_fixed": "#dae2fd",
+        "secondary_fixed_dim": "#bec6e0",
+        "surface": "#f8f9ff",
+        "surface_bright": "#f8f9ff",
+        "surface_container": "#e5eeff",
+        "surface_container_high": "#dce9ff",
+        "surface_container_highest": "#d3e4fe",
+        "surface_container_low": "#eff4ff",
+        "surface_container_lowest": "#ffffff",
+        "surface_dim": "#cbdbf5",
+        "surface_tint": "#006a61",
+        "surface_variant": "#d3e4fe",
+        "tertiary": "#006194",
+        "tertiary_container": "#007bb9",
+        "tertiary_fixed": "#cce5ff",
+        "tertiary_fixed_dim": "#93ccff"
+      },
+      "overrideNeutralColor": "#64748b",
+      "overridePrimaryColor": "#0d9488",
+      "overrideSecondaryColor": "#0f172a",
+      "overrideTertiaryColor": "#0284c7",
+      "roundness": "ROUND_FOUR",
+      "spacing": {
+        "gutter": "1rem",
+        "gutter-mobile": "0.75rem",
+        "margin": "1.5rem",
+        "margin-mobile": "1rem",
+        "space-lg": "1rem",
+        "space-md": "0.75rem",
+        "space-sm": "0.5rem",
+        "space-xl": "1.5rem",
+        "space-xs": "0.25rem",
+        "space-xxl": "2rem",
+        "space-xxs": "0.125rem"
+      },
+      "spacingScale": 2,
+      "typography": {
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "22px"
+        },
+        "body-md": {
+          "fontFamily": "Inter",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px"
+        },
+        "body-sm": {
+          "fontFamily": "Inter",
+          "fontSize": "13px",
+          "fontWeight": "400",
+          "lineHeight": "18px"
+        },
+        "caption": {
+          "fontFamily": "Inter",
+          "fontSize": "11px",
+          "fontWeight": "500",
+          "letterSpacing": "0.04em",
+          "lineHeight": "14px"
+        },
+        "code-num": {
+          "fontFamily": "JetBrains Mono",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "18px"
+        },
+        "headline-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "24px",
+          "fontWeight": "600",
+          "letterSpacing": "-0.015em",
+          "lineHeight": "32px"
+        },
+        "headline-lg-mobile": {
+          "fontFamily": "Inter",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em",
+          "lineHeight": "28px"
+        },
+        "headline-md": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em",
+          "lineHeight": "26px"
+        },
+        "headline-sm": {
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "24px"
+        },
+        "headline-xl": {
+          "fontFamily": "Inter",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "40px"
+        },
+        "headline-xl-mobile": {
+          "fontFamily": "Inter",
+          "fontSize": "26px",
+          "fontWeight": "700",
+          "letterSpacing": "-0.015em",
+          "lineHeight": "34px"
+        },
+        "label-md": {
+          "fontFamily": "Inter",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "18px"
+        },
+        "label-sm": {
+          "fontFamily": "Inter",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "letterSpacing": "0.02em",
+          "lineHeight": "16px"
+        }
+      }
+    },
+    "deviceType": "DESKTOP",
+    "metadata": {
+      "userRole": "OWNER"
+    },
+    "name": "projects/17169495214196134972",
+    "origin": "STITCH",
+    "projectType": "TEXT_TO_UI_PRO",
+    "screenInstances": [
+      {
+        "height": 1024,
+        "id": "1665a06b00b649fbb7ffca73da40dad0",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/1665a06b00b649fbb7ffca73da40dad0",
+        "width": 1280,
+        "y": 6824
+      },
+      {
+        "height": 1024,
+        "hidden": true,
+        "id": "2656722e42f94132906e1068a8965ddd",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/2656722e42f94132906e1068a8965ddd",
+        "width": 1280,
+        "x": 2368
+      },
+      {
+        "height": 1024,
+        "hidden": true,
+        "id": "26627c4784454a64aa7abf1cc578432c",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/26627c4784454a64aa7abf1cc578432c",
+        "width": 1280,
+        "x": 5056
+      },
+      {
+        "height": 1024,
+        "id": "2706a6358a944733a4dbc2844f2296bc",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/2706a6358a944733a4dbc2844f2296bc",
+        "width": 1280,
+        "y": 29875
+      },
+      {
+        "height": 1962,
+        "id": "2deba0cefa1e437fa793a1d8047edfcd",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/2deba0cefa1e437fa793a1d8047edfcd",
+        "width": 1280,
+        "y": 14891
+      },
+      {
+        "height": 1751,
+        "id": "3d72b844c45744aab25c2e0773f89c34",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/3d72b844c45744aab25c2e0773f89c34",
+        "width": 1280,
+        "y": 11604
+      },
+      {
+        "height": 1024,
+        "id": "3f3bc00b590c4ddb801ad197fe9e713f",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/3f3bc00b590c4ddb801ad197fe9e713f",
+        "width": 1280,
+        "y": 13611
+      },
+      {
+        "height": 1919,
+        "id": "488544f8bd454f2a965252e424b74e21",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/488544f8bd454f2a965252e424b74e21",
+        "width": 1280,
+        "y": 2967
+      },
+      {
+        "height": 1667,
+        "id": "59c993a319514a3eb04589196193ff92",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/59c993a319514a3eb04589196193ff92",
+        "width": 1280,
+        "y": 19078
+      },
+      {
+        "height": 1280,
+        "hidden": true,
+        "id": "6709a8d261fd4c5bb94a4b828eef8ec1",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/6709a8d261fd4c5bb94a4b828eef8ec1",
+        "width": 1280,
+        "x": 1024
+      },
+      {
+        "height": 1252,
+        "id": "6bfda21b7dfe48c8857055e1012b01bd",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/6bfda21b7dfe48c8857055e1012b01bd",
+        "width": 1280,
+        "y": 10096
+      },
+      {
+        "height": 1857,
+        "id": "7bb194e9cf074fdab9b060ba81be357b",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/7bb194e9cf074fdab9b060ba81be357b",
+        "width": 1280,
+        "y": 21162
+      },
+      {
+        "height": 1683,
+        "hidden": true,
+        "id": "9568b97b8e054bd89b6400818dd6badc",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/9568b97b8e054bd89b6400818dd6badc",
+        "width": 1280,
+        "x": 3712
+      },
+      {
+        "height": 1427,
+        "id": "967440418fb146b3abff97cb251960f4",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/967440418fb146b3abff97cb251960f4",
+        "width": 1280,
+        "y": 5142
+      },
+      {
+        "height": 540,
+        "hidden": true,
+        "id": "assets_296371bb1df24dab9d42868e0b2bff9b",
+        "sourceAsset": "assets/296371bb1df24dab9d42868e0b2bff9b",
+        "type": "DESIGN_SYSTEM_INSTANCE",
+        "width": 960
+      },
+      {
+        "height": 1934,
+        "id": "c0ea8959adb64d4ab69c76d18e5cf2b8",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/c0ea8959adb64d4ab69c76d18e5cf2b8",
+        "width": 1280,
+        "y": 23275
+      },
+      {
+        "height": 1175,
+        "id": "c4c72ec7bc5740119a5625ddf69f4deb",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/c4c72ec7bc5740119a5625ddf69f4deb",
+        "width": 1280,
+        "y": 1536
+      },
+      {
+        "height": 1720,
+        "id": "ce318ba0776d459ab1614b45d67ea435",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/ce318ba0776d459ab1614b45d67ea435",
+        "width": 1280,
+        "y": 25466
+      },
+      {
+        "height": 1713,
+        "id": "d4daec93fa7e4246a9f758e6e543cb02",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/d4daec93fa7e4246a9f758e6e543cb02",
+        "width": 1280,
+        "y": 17109
+      },
+      {
+        "height": 2177,
+        "id": "f4d9e07b99d34f3bba4398f5a13e53f2",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/f4d9e07b99d34f3bba4398f5a13e53f2",
+        "width": 1280,
+        "y": 27441
+      },
+      {
+        "height": 1736,
+        "id": "fd090eb9240f4b0f8a12282bd532f7ee",
+        "label": "Generating Screen...",
+        "sourceScreen": "projects/17169495214196134972/screens/fd090eb9240f4b0f8a12282bd532f7ee",
+        "width": 1280,
+        "y": 8104
+      }
+    ],
+    "thumbnailScreenshot": {
+      "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V3uLzHZPgeEYwOPueKxkjqSOR27t5WOkAa-cc8Gm5RED3L9sqboFXlVMu0hM-pei2_puNvGIhrUM6k9Y5S5pwlffBJHxcbMo8Ona8dnL9RynUWkFnITW3oBc_cHn0qPEUcn8znisfX3E0MJ8-QypkWNVbhRrMebHEqXoMa6UAe250hp50Ea4-C0lF14vlLThstHU9QVRvcEDaWt_0AJ8l5zlzEh3vMe8cZfM2TOyZYhtniiHL_dlFmHKI",
+      "name": "projects/17169495214196134972/screens/9568b97b8e054bd89b6400818dd6badc/fileEntries/screenshot"
+    },
+    "title": "Nexalis Workspace Task Management",
+    "updateTime": "2026-10-07T14:14:06.295871Z",
+    "visibility": "PRIVATE"
+  },
+  "screens": [
+    {
+      "deviceType": "DESKTOP",
+      "height": "3852",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDAyYWI3MzA3ZTA1NzYzMTZjNmUxNTFkYTISCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/488544f8bd454f2a965252e424b74e21/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/488544f8bd454f2a965252e424b74e21",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UlQboB8jhBlLTEjtYXivrcxf9aJVf9knWJ4xnIEEqMq_U_gdypzKl8BOUh5c9bOHlqRIZsGe2gLmRPoioorwe2glc6qVBm3UXCUaFKoDvEhWWi2vd4IzRd1FpfR23W4D86cL20ErXA0NhsFMvorHFtYSvZVjXQDlzmbX6diGEdmCsh9Gg9uzzmnt7Xqt-PM8tXLwYPKnxfSNhGjnogNaMX-yLmN-8FCs8LIwRz0RzO3VN9IUsSAoPZiB5w",
+        "name": "projects/17169495214196134972/screens/488544f8bd454f2a965252e424b74e21/fileEntries/screenshot"
+      },
+      "title": "W02 \u2014 Dashboard",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3440",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDBhNDBhZTZmNjAyYTk5YjExY2YwNzY4OWYSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/ce318ba0776d459ab1614b45d67ea435/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/ce318ba0776d459ab1614b45d67ea435",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XPD2gOI10MCo8NrNMOtdw0a0t7JYWQS94fBllczMcFcam7HpKys1EBYJ8Y9wLnDvh5sNXboOOwV7IULGgHssZi8yDmzAgAURdpAQD3T_Qtm3ygRrZMuJ8JytNv_-uatjf7yjNZ0LLVBWHS6pHmeZn03DKcWd4dRQOA4MwGOffvNGSJcGpLGmpDLgQQlEzjoG8HxTNlXUsB2hbKXI4vz-JD3ebr8zolGxTmLrZYGlRr7wg5Hnhw2waWNg2H",
+        "name": "projects/17169495214196134972/screens/ce318ba0776d459ab1614b45d67ea435/fileEntries/screenshot"
+      },
+      "title": "W14 \u2014 Account and Preferences",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2504",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA0ZGIwM2NhYTAwMzAzZTkzMjcwMDgyYzESCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/6bfda21b7dfe48c8857055e1012b01bd/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/6bfda21b7dfe48c8857055e1012b01bd",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vo1_BnQLxCx_7kv8DQtPBxgQK2xrfXNoN9XBUcF15Ic7I8soWDiYZkEsEAGy7V34qPtvNqEDB1BzXuz3uPnnXEmtPKFweXhCWJ76tp65lTz4SvmGGXpVkCTEKQ0bHYlOQzJvLs-VtyHLPlxB_IpRaDFH3HYq334BEVBPht4i6Si8XRdOy2V-iIFCbgVa15RvcP7sM0_ARzgSfrI1pJ7veBva1ArN-KC5xr-hhS-UnZbmLSeYKn9tYAOfQR",
+        "name": "projects/17169495214196134972/screens/6bfda21b7dfe48c8857055e1012b01bd/fileEntries/screenshot"
+      },
+      "title": "W06 \u2014 Project Board",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3926",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA2NmI1ZjY5YzAxYTYxMTE1Y2MwNzRjMzcSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/2deba0cefa1e437fa793a1d8047edfcd/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/2deba0cefa1e437fa793a1d8047edfcd",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XhivFMxEfO9QD81a7o897xXufCQk_QtiEbbMIOBplgcffjYW-kzC5sXOxlFwGGvw9RQrf7KvrtkZey2LV91MJD4wVZalwpe8tqyBpVniW3clDvJDicDVdNUx6suTSyJu694AK21ypTLcyMMF__n2GUznx3J1ZE3QmRiSG6zfdczO4gn0pjGue1HmSCs8zQipbju_bMLX0hm1pcCqrDxc6Ye4guiwKObpS92TovFEFexG9PZ0Fq7oJxAMeG",
+        "name": "projects/17169495214196134972/screens/2deba0cefa1e437fa793a1d8047edfcd/fileEntries/screenshot"
+      },
+      "title": "W09 \u2014 Task Details",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2350",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDAxYmQ1NDlmMTAzNzQ5YWViYzYxOTJmNzgSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/c4c72ec7bc5740119a5625ddf69f4deb/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/c4c72ec7bc5740119a5625ddf69f4deb",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XSDbihMEuRjd6kkqqgY9NJkSeDI_K2rM59kG4GUWNQzcFzMooeYbGm8Upa0UG8uldQTYGhkR3hZ6Oh9Rf4KVef8satL1fW3Va_zM-Ry8AjHUYx6s1HsixckFrXpAY4Zuy9xLSoxRpijE-FuR1nZg16xhZUw8wiq4VixbQiGWIgUFRARPKkry9urzEOC-THvySwaEOimAPuEUHwG_TYtVVgnzgsyl-tMnF4n4rb-qriKLJEDMF2shLThar4",
+        "name": "projects/17169495214196134972/screens/c4c72ec7bc5740119a5625ddf69f4deb/fileEntries/screenshot"
+      },
+      "title": "W01 \u2014 Account Entry",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2048",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDAzYmIyZWQ5MTAyMmQ1N2FiZjcwN2Y3NmESCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/1665a06b00b649fbb7ffca73da40dad0/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/1665a06b00b649fbb7ffca73da40dad0",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vnu4uCE-r1qUz14YvSUmM4HYt7AZS5L76gbOx9HZU6KX4iqsiVCRIadCBRNbLwwIT6h4IxxPmHg90Bvo_dOsaZdemguAWTxRM9bEkUWdjnYBwAiVj2Wk5LcIUpG1p_UhXHivKRqGUKGp-ILsdxVyYsuMmUtl26lmF4j-ERjHD1mcLWGvXptJIH5G9Nt6Y3eFpYnsrDrj5JkMCJaAPYqGz-mwKLGhDDQUQYbyNSCNJZlCvM7vh8DXYnSig",
+        "name": "projects/17169495214196134972/screens/1665a06b00b649fbb7ffca73da40dad0/fileEntries/screenshot"
+      },
+      "title": "W04 \u2014 Create & Edit Project",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "4346",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDBhZDJjNTc4OTA1YzJmZjc1YzcwNGM1ZDMSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/f4d9e07b99d34f3bba4398f5a13e53f2/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/f4d9e07b99d34f3bba4398f5a13e53f2",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UDLiNKbNj53XCd4RVuzcdSEreTmUe_AOctPV3tErczYydCIIqkyYQTyBw4xQJvLACAks-ynswttS5RZhLtRgS6eaQq-b7nThzMwMduiAJ0IJHplgFkxb-MCiHhGK7Isx5u004ilindTrlg2l1eFV_MzwVbp0T7G3OMvjF7dzALE4HcLwPdZgpZbAXETROYnVqkpaGOEV6tXOz4epw5hMF5-hQuZDLIplMWDbVXQBopZP5L6w45NTzvhRc3",
+        "name": "projects/17169495214196134972/screens/f4d9e07b99d34f3bba4398f5a13e53f2/fileEntries/screenshot"
+      },
+      "title": "W15 \u2014 Workspace Settings",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2192",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDBiOGIzN2ZmYzAzMzg1YWFlYTIxMGMxNzkSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/2706a6358a944733a4dbc2844f2296bc/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/2706a6358a944733a4dbc2844f2296bc",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VUoahvocm9DnM1M2TChUkh1IPXaGkJ8nXQgAQ6vX75LaVDedBMSg1FvFsgaeipLXPyaWphYt6zs1g_4eQKQiJLCtzSvlsU-D7Dlm8PKcfU2LkRhJmXGWCOXcNp8htuyQJnqNSEMC2CvPXyfn_0ZBMgMT49qh4et1WkVFkCwSSz9T16ZKbvlXJfNxfzahnlU7j8Y9IX4DsIuRUozX_ClJlSctQYpN9ybQtzRwaHv6VCKHkOB289zYHqwGQ",
+        "name": "projects/17169495214196134972/screens/2706a6358a944733a4dbc2844f2296bc/fileEntries/screenshot"
+      },
+      "title": "W16 \u2014 Shared System States",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3484",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA0NGM3ZjdiYTA1MjI4NGFlYmIzNjhmNDgSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/fd090eb9240f4b0f8a12282bd532f7ee/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/fd090eb9240f4b0f8a12282bd532f7ee",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X38-UrnidE4Rnwiw7UOEBr2UANhL1KkKh7u6Rjx-mN5xqq5yBZIujEIQLKcH2uau10BRrEbS61mCi5uHFOT9P8svar3ZLRd5vKC7heA0qZXCvb1IB-0aOWSnpVWCmqeXHiJwc8C_CqRYzbzuWEpDLG1eX7YFeTCVroa8ReiMMyDeJ7xJBNtPuAvkR_F92EwuVd-757D9pJfzgVxyxYDMCaS3a75GKUHgp7g5nWxIYtrH6hs8U2oZsTd1wQ",
+        "name": "projects/17169495214196134972/screens/fd090eb9240f4b0f8a12282bd532f7ee/fileEntries/screenshot"
+      },
+      "title": "W05 \u2014 Project Overview",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3868",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA5MmVjZTc4OTAzOTJjYjNlYjUxMTMwZWESCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/c0ea8959adb64d4ab69c76d18e5cf2b8/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/c0ea8959adb64d4ab69c76d18e5cf2b8",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Uq89VpRQQcj6DwZQPTwRC6FbqQCh2vfHLgQqGDZcz1fVA6q6Uh53ay-tnUVUJdCcc-XpKorSzaKt8jA_ezixE9pOmuMM3eozTECCXO8EjzDkPGjTpfdE_fPkd_HBcDGVunklHdQvSDsUl7ZlCE3A6dl4YKsrrUmdj_2h92Fk3z_rQEv0rs0x9aDNxY80cB9cvCdSfJ8Yyc9rniygagFez7_h9qRHQU7J5-AsxC_gp6gIUxn9sU1RpAiss",
+        "name": "projects/17169495214196134972/screens/c0ea8959adb64d4ab69c76d18e5cf2b8/fileEntries/screenshot"
+      },
+      "title": "W13 \u2014 Reports & Analytics",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2048",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA1ZTQ2MjlmNDA1YzJmZjc1YzcwNGM1ZDMSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/3f3bc00b590c4ddb801ad197fe9e713f/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/3f3bc00b590c4ddb801ad197fe9e713f",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WdhKm964V2t7NQBQ0Bke0KfLW73pmtxz9oR0kt-g69honiOuLev7tzwJZYsEYQURT1mtB4JXgOs6yopysmvjGt4Z9Y53VQorzhj7lUpFpzwph8aLEkB39crXpYfIfyJvgGzsVHTFX2tNPjX-pbxsntncFOD_E9_i9hsZXArXNN85Nehh9GSmEVsXhNTi34VDJchm_vGe65P-5G9i8UZv28H5WoOIlN2TJZpn32MBtHaHuI9ZExc9KDYqHM",
+        "name": "projects/17169495214196134972/screens/3f3bc00b590c4ddb801ad197fe9e713f/fileEntries/screenshot"
+      },
+      "title": "W08 \u2014 Create & Edit Task",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3712",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA4NTdkMzEyMDA5MjVkNGVjZjkwYmE0NWYSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/7bb194e9cf074fdab9b060ba81be357b/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/7bb194e9cf074fdab9b060ba81be357b",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XvibE4Ylrk0BhQR7RBRJeXm3eIyQqeiWMjDxpxl2o9LAPdRJBGW-y6DObg-da41hWuoNAP-2zNwCFOdLhCTK_2lfG_gTLXanTx20Y8qAR_Rf9Gm_3qrDnx07EPlRGaTNO8ZU4Bb8K2Obd6RAMkI7LOk8kBaq_gx_gSTDFphODiGIoaeHwwEN29Xpsm_mthzCp0Jpaoscq4eYsPEozLvffWp6pvI3CP-TaO0g3L3oY1O9Os2QK7Da6Y8LMX",
+        "name": "projects/17169495214196134972/screens/7bb194e9cf074fdab9b060ba81be357b/fileEntries/screenshot"
+      },
+      "title": "W12 \u2014 Project Members",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3332",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA3YmNmNjg2YTA3NzlhMDEyNzgxZTE3ZWESCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/59c993a319514a3eb04589196193ff92/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/59c993a319514a3eb04589196193ff92",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XIHx7FzP2BOnHxDBwV8Ww2MjZ_RqBXLIHMZXaEGBXg4yBTcBc0RYktuB0Ka2igxlZ-EEJMYX3BaWUs_Gt3ClDSpIRPbXiPRgvq4ceA8zoADuWNTI-m3t6N5JMr98w6uWmqebIBnwm1Pl4ysyhHKm4_FCvlWbd85nFEhKgNbKu9bn5bJ_QIXkINCFBi7-ri0eEMdar-vCIgM320kb2hxzk1_EszdBk2hgOzSE_ABICgRHlHKhzQjYe4ORDO",
+        "name": "projects/17169495214196134972/screens/59c993a319514a3eb04589196193ff92/fileEntries/screenshot"
+      },
+      "title": "W11 \u2014 Workspace Team",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3476",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA2Zjg3N2ZiNzA3M2FjN2I4MzMwNDU3NGISCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/d4daec93fa7e4246a9f758e6e543cb02/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/d4daec93fa7e4246a9f758e6e543cb02",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UvObRAhEh-pSbXbuPUTNZNHiOf1EWazGOxkUzJFsdFOMFOZIhkwDqnmzkkuCj4cUn0BGS8wCIV5E6iv2byASglvNTObFoApdKYvB7UhdBrw1L3KD-oaAzKxnK8H-inPs5X07W-j1uhqQKQc7L2i7Ki0ajeif2qRVlp8E3G1eFmVnK3E0hU6dPieHFKaGnVkxfiSwUvecGwz_GUoUodtHJVf7IivbLs1GRq0Orq2PZ7Zgn5O8hh6FRIPcNO",
+        "name": "projects/17169495214196134972/screens/d4daec93fa7e4246a9f758e6e543cb02/fileEntries/screenshot"
+      },
+      "title": "W10 \u2014 My Tasks",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "3502",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDA1N2U0NmJkMTA3YzRjOTMxY2UzYjk2YjASCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/3d72b844c45744aab25c2e0773f89c34/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/3d72b844c45744aab25c2e0773f89c34",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VFE-JQNUFemY7FA9aaFvHMcawFVLVJSijzxy1wzNx0NPYHQxXig7rk7II08FEOZz9HpHVEVEiJLxGTCbj-aW_WmzL2Pu9LvhdvVgFCn1DcsAtFbGl-OtBxhMm09Mc96osBl3Mxo9yj09KSiB5riwMQ5utPm1-VZQtP8dg9v-IuC6wwc5p6VDV5nwp-HfgUVZTTyQC8RKAlGOwf1GTYQJ3S_MOO19rK2xBYgkV390qWV8OwMjXuodXU9xo",
+        "name": "projects/17169495214196134972/screens/3d72b844c45744aab25c2e0773f89c34/fileEntries/screenshot"
+      },
+      "title": "W07 \u2014 Project Task List",
+      "width": "2560"
+    },
+    {
+      "deviceType": "DESKTOP",
+      "height": "2924",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJyEgxzdGl0Y2hfZmlsZXMaYgosc3RpdGNoX2h0bWxfMDAwNjVkNDAzM2ZiNjVhYTAzNGE0ZTIyMTYyYWU0NzUSCxIHEIKq8J28FBgBkgEkCgpwcm9qZWN0X2lkEhZCFDE3MTY5NDk1MjE0MTk2MTM0OTcy&filename=&opi=89354086",
+        "mimeType": "text/html",
+        "name": "projects/17169495214196134972/screens/967440418fb146b3abff97cb251960f4/fileEntries/html"
+      },
+      "name": "projects/17169495214196134972/screens/967440418fb146b3abff97cb251960f4",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1W_iUZBjnToMOabAZHERG-Bnh6GIZCt3q7pmgwzxeeYT6ozsJ4HkdpfpAYNhY5PYyiFmEbPHts4P2sikSiKLEDSuuNEUlYyh7tqiRqqE8y5s1_7zqPUmAoghQcjEhuZROjdYOYxGozVEEDA4HDqs6QJ5h5_0qOydTmACBHVhWScgqKdyaW-edBBUacQV9gOQ-DthVRig-BNBHFYo9LUeqcD5ensaJJ5TsRqNqazx-fma4bFstcrpKXiTe7q",
+        "name": "projects/17169495214196134972/screens/967440418fb146b3abff97cb251960f4/fileEntries/screenshot"
+      },
+      "title": "W03 \u2014 Projects",
+      "width": "2560"
+    }
+  ],
+  "designSystems": [
+    {
+      "designSystem": {
+        "displayName": "Nexalis Workspace",
+        "styleGuidelines": "## Brand & Style\n\nThis design system delivers a high-precision, utilitarian enterprise environment tailored for engineering, asset management, and operations teams at an international energy operator based in the UAE. \n\nThe aesthetic is Modern Corporate with calibrated functional density\u2014blending the clarity of modern engineering issue trackers with executive-grade poise. The visual tone projects stability, operational rigor, and regional authority:\n- Deep oceanic navies frame the application shell, grounding high-density workflows in visual permanence.\n- Pristine, neutral-cool canvas tones minimize cognitive strain across long operational shifts.\n- Vibrant maritime teals anchor primary actions, balancing energy-sector legacy with forward-leaning digital operations.\n\nThe interface rejects ornamental skeuomorphism and excessive glassmorphism. It prioritizes data integrity, sub-second visual scanning, clear visual state differentiation, and seamless localization readiness (including dual English/Arabic metrics and typography compatibility).\n\n## Layout & Spacing\n\nThe workspace leverages a persistent application framework consisting of a fixed 260px left global navigation sidebar (collapsible to 64px icon-only), an optional 320px contextual inspection panel on the right, and an agile, fluid central canvas.\n\n### Layout Mechanics\n- **Grid Architecture**: 12-column fluid grid across the central canvas with a 16px (`1rem`) gutter and 24px (`1.5rem`) outer margin on desktop screens (`>= 1024px`).\n- **Breakpoints**:\n  - `Desktop Wide (>= 1440px)`: Full 3-panel workflow (Navigation + Board/Table View + Detail Flyout).\n  - `Desktop Standard (1024px - 1439px)`: Detail views overlay as right slide-over drawers with backdrop tint.\n  - `Tablet (768px - 1023px)`: Left navigation collapses to icon rail; gutters reduce to 16px.\n  - `Mobile (< 768px)`: Navigation converts to an off-canvas drawer; columns stack to single-column streams with 12px margins and 8px gutters.\n- **Compact Density**: Core workflow interfaces (data grids, sub-task lists, comment logs) maintain a baseline unit of 4px. Element padding favors a compact vertical footprint (`0.375rem` to `0.5rem`) and wider horizontal padding (`0.75rem` to `1rem`) to keep operational tools rapid and scan-friendly.\n\n## Elevation & Depth\n\nVisual hierarchy relies on crisp, low-contrast borders combined with ultra-subtle, slate-tinted ambient shadows. Deep layered drop shadows are avoided to maintain professional clarity and prevent clutter in high-density data matrices.\n\n### Surface Elevation Scale\n- **Level 0 (Base Canvas)**: Background fill `#f8fafc`. Flat, non-elevated.\n- **Level 1 (Cards, Worktables, Panels)**: `#ffffff` surface, bounded by a 1px border (`#e2e8f0`). Shadow: `0 1px 2px 0 rgba(15, 23, 42, 0.05)`.\n- **Level 2 (Hovered Cards, Popovers, Segmented Controls)**: Bounded by 1px border (`#cbd5e1`). Shadow: `0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04)`.\n- **Level 3 (Dropdown Menus, Modals, Slide-over Drawers)**: 1px border (`#cbd5e1`). Shadow: `0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05)`.\n- **Dark Structural Surfaces (Sidebar & Shell)**: `#0f172a` with internal dividers rendered via `#1e293b` (1px solid), avoiding dark shadows in favor of crisp boundary lines.\n\n## Components\n\n### Buttons\n- **Primary**: Solid background `#0d9488`, text `#ffffff`, border transparent. Focus ring: 2px offset with `#0d9488`. Hover: `#14b8a6`. Active: `#0f766e`.\n- **Secondary / Outline**: Background `#ffffff`, text `#0f172a`, border 1px solid `#e2e8f0`. Hover: background `#f1f5f9`, border `#cbd5e1`.\n- **Ghost / Tertiary**: Background transparent, text `#64748b`. Hover: background `#f1f5f9`, text `#0f172a`.\n- **Sizes**: Small (28px height, 12px font), Default (36px height, 14px font), Large (42px height, 15px font). Padding: horizontal `0.75rem` to `1rem`.\n\n### Status Badges & Chips\n- Compact, non-intrusive metadata capsules. Height: 22px; padding: 2px 8px; radius: 4px.\n- Styled as semi-transparent background tints (10-15% opacity) accompanied by matching 1px border and high-contrast foreground text matching semantic rules (Slate, Sky Blue, Amber, Emerald, Crimson).\n\n### Data Tables & Task Lists\n- **Header Rows**: Height 36px, background `#f8fafc`, typography `caption` uppercase, 1px bottom border `#e2e8f0`.\n- **Data Rows**: Height 44px (compact standard), background `#ffffff`, alternating row hover `#f8fafc`. Active row selection marked with a 3px left vertical indicator in primary teal (`#0d9488`).\n- **Dividers**: Crisp 1px `#f1f5f9` horizontal lines; vertical cell gridlines omitted to avoid visual noise.\n\n### Form Inputs & Selects\n- Height: 36px. Background: `#ffffff`. Border: 1px solid `#cbd5e1`. Internal padding: `0.5rem 0.75rem`.\n- Focus state: Border color `#0d9488` with an ambient glow (`box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15)`).\n- Error state: Border color `#dc2626` with red glow (`box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15)`).\n- Label placement: Top-aligned, 4px spacing, `label-sm` weight, color `#334155`.\n\n### Checkboxes & Radio Controls\n- Dimensions: 16px x 16px. Border: 1.5px solid `#94a3b8`.\n- Checked state: Background `#0d9488`, border `#0d9488`, icon checkmark white.\n- Indeterminate state: Primary teal background with centered 8px horizontal white bar.\n\n### Cards & Container Panels\n- Background: `#ffffff`. Border: 1px solid `#e2e8f0`. Radius: 8px.\n- Internal padding: `1rem` standard for workspace boards (Kanban columns: 12px padding; inner task cards: 12px padding with 8px vertical gap).\n\n### Workspace-Specific Modules\n- **Drilling & Project Milestone Bar**: Segmented horizontal meter using primary teal (`#0d9488`) for executed milestones, sky blue (`#0284c7`) for active segments, and light slate (`#e2e8f0`) for pending steps.\n- **UAE Timezone / Shift Header Widget**: Monospaced timestamp badge displaying `GST (UTC+4)` with live operational shift indicators inside the deep navy shell bar.",
+        "theme": {
+          "bodyFont": "INTER",
+          "bodyFontFamily": "Inter",
+          "colorMode": "LIGHT",
+          "colorVariant": "FIDELITY",
+          "customColor": "#0d9488",
+          "designMd": "---\nname: Nexalis Workspace\ncolors:\n  surface: '#f8f9ff'\n  surface-dim: '#cbdbf5'\n  surface-bright: '#f8f9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#eff4ff'\n  surface-container: '#e5eeff'\n  surface-container-high: '#dce9ff'\n  surface-container-highest: '#d3e4fe'\n  on-surface: '#0b1c30'\n  on-surface-variant: '#3d4947'\n  inverse-surface: '#213145'\n  inverse-on-surface: '#eaf1ff'\n  outline: '#6d7a77'\n  outline-variant: '#bcc9c6'\n  surface-tint: '#006a61'\n  primary: '#00685f'\n  on-primary: '#ffffff'\n  primary-container: '#008378'\n  on-primary-container: '#f4fffc'\n  inverse-primary: '#6bd8cb'\n  secondary: '#565e74'\n  on-secondary: '#ffffff'\n  secondary-container: '#dae2fd'\n  on-secondary-container: '#5c647a'\n  tertiary: '#006194'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#007bb9'\n  on-tertiary-container: '#fdfcff'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#89f5e7'\n  primary-fixed-dim: '#6bd8cb'\n  on-primary-fixed: '#00201d'\n  on-primary-fixed-variant: '#005049'\n  secondary-fixed: '#dae2fd'\n  secondary-fixed-dim: '#bec6e0'\n  on-secondary-fixed: '#131b2e'\n  on-secondary-fixed-variant: '#3f465c'\n  tertiary-fixed: '#cce5ff'\n  tertiary-fixed-dim: '#93ccff'\n  on-tertiary-fixed: '#001d31'\n  on-tertiary-fixed-variant: '#004b73'\n  background: '#f8f9ff'\n  on-background: '#0b1c30'\n  surface-variant: '#d3e4fe'\ntypography:\n  headline-xl:\n    fontFamily: Inter\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  headline-xl-mobile:\n    fontFamily: Inter\n    fontSize: 26px\n    fontWeight: '700'\n    lineHeight: 34px\n    letterSpacing: -0.015em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Inter\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '600'\n    lineHeight: 24px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 22px\n  body-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 18px\n  label-md:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 18px\n  label-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.02em\n  caption:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '500'\n    lineHeight: 14px\n    letterSpacing: 0.04em\n  code-num:\n    fontFamily: JetBrains Mono\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 18px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1rem\n  gutter-mobile: 0.75rem\n  margin: 1.5rem\n  margin-mobile: 1rem\n  space-xxs: 0.125rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 0.75rem\n  space-lg: 1rem\n  space-xl: 1.5rem\n  space-xxl: 2rem\n---\n\n## Brand & Style\n\nThis design system delivers a high-precision, utilitarian enterprise environment tailored for engineering, asset management, and operations teams at an international energy operator based in the UAE. \n\nThe aesthetic is Modern Corporate with calibrated functional density\u2014blending the clarity of modern engineering issue trackers with executive-grade poise. The visual tone projects stability, operational rigor, and regional authority:\n- Deep oceanic navies frame the application shell, grounding high-density workflows in visual permanence.\n- Pristine, neutral-cool canvas tones minimize cognitive strain across long operational shifts.\n- Vibrant maritime teals anchor primary actions, balancing energy-sector legacy with forward-leaning digital operations.\n\nThe interface rejects ornamental skeuomorphism and excessive glassmorphism. It prioritizes data integrity, sub-second visual scanning, clear visual state differentiation, and seamless localization readiness (including dual English/Arabic metrics and typography compatibility).\n\n## Colors\n\nThe palette establishes structural separation between navigational controls, working canvases, interactive states, and mission-critical telemetry.\n\n### Core Architecture\n- **Primary Teal (`#0d9488`)**: Dedicated to primary calls-to-action, active selection indicators, and key operational confirmations. Hover states scale to `#14b8a6`; pressed and focused states settle into `#0f766e`.\n- **Structural Navy (`#0f172a`, `#1e293b`)**: Confined to global navigation rails, primary headers, and high-level enterprise shell containers. It provides an unyielding contrast anchor against bright data tables.\n- **Secondary Accent (`#0284c7`)**: Used for analytical callouts, link navigation, active filters, and operational progress states.\n- **Neutral Scales (`#f8fafc`, `#f1f5f9`, `#e2e8f0`, `#64748b`, `#0f172a`)**: \n  - Canvas background: `#f8fafc`\n  - Elevated card surfaces: `#ffffff`\n  - Subtle borders and dividers: `#e2e8f0`\n  - Subdued metadata & secondary typography: `#64748b`\n  - High-emphasis body text: `#0f172a`\n\n### Semantic Status Tokens\nState badges require zero ambiguity across field tickets, drilling schedules, and capital expense pipelines:\n- **To Do / Draft**: Slate (`#64748b` on `#f1f5f9` tint, border `#cbd5e1`)\n- **In Progress / Active**: Sky Blue (`#0284c7` on `#e0f2fe` tint, border `#bae6fd`)\n- **In Review / Verification**: Amber (`#d97706` on `#fef3c7` tint, border `#fde68a`)\n- **Done / Operational**: Emerald (`#059669` on `#d1fae5` tint, border `#a7f3d0`)\n- **Blocked / Incident Critical**: Crimson (`#dc2626` on `#fee2e2` tint, border `#fecaca`)\n\n## Typography\n\nTypography centers on **Inter** to deliver optimum legibility across tabular datasets, hierarchical Gantt charts, operational boards, and multi-field inspection forms. Numerical metrics, equipment serial numbers, and financial ledger figures utilize **JetBrains Mono** with tabular lining figures enabled (`font-variant-numeric: tabular-nums`).\n\n### Hierarchy & Rhythm\n- **Page Titles & Module Headers (`headline-xl`, `headline-lg`)**: Bold, tightened kerning for assertive grounding of major workspace views.\n- **Section & Modal Headers (`headline-md`, `headline-sm`)**: Semi-bold, directly connecting action toolbars to corresponding record tables.\n- **Work Surface Text (`body-md`, `body-sm`)**: Tuned for dense data ingestion without text fatigue; precise 1.4-1.45x line-height ratios balance density with readability.\n- **Labels & Microcopy (`label-sm`, `caption`)**: Subtle uppercase tracking on captions (`0.04em`) reserved strictly for status classifications, table headers, and asset tier categorizations.\n\n## Layout & Spacing\n\nThe workspace leverages a persistent application framework consisting of a fixed 260px left global navigation sidebar (collapsible to 64px icon-only), an optional 320px contextual inspection panel on the right, and an agile, fluid central canvas.\n\n### Layout Mechanics\n- **Grid Architecture**: 12-column fluid grid across the central canvas with a 16px (`1rem`) gutter and 24px (`1.5rem`) outer margin on desktop screens (`>= 1024px`).\n- **Breakpoints**:\n  - `Desktop Wide (>= 1440px)`: Full 3-panel workflow (Navigation + Board/Table View + Detail Flyout).\n  - `Desktop Standard (1024px - 1439px)`: Detail views overlay as right slide-over drawers with backdrop tint.\n  - `Tablet (768px - 1023px)`: Left navigation collapses to icon rail; gutters reduce to 16px.\n  - `Mobile (< 768px)`: Navigation converts to an off-canvas drawer; columns stack to single-column streams with 12px margins and 8px gutters.\n- **Compact Density**: Core workflow interfaces (data grids, sub-task lists, comment logs) maintain a baseline unit of 4px. Element padding favors a compact vertical footprint (`0.375rem` to `0.5rem`) and wider horizontal padding (`0.75rem` to `1rem`) to keep operational tools rapid and scan-friendly.\n\n## Elevation & Depth\n\nVisual hierarchy relies on crisp, low-contrast borders combined with ultra-subtle, slate-tinted ambient shadows. Deep layered drop shadows are avoided to maintain professional clarity and prevent clutter in high-density data matrices.\n\n### Surface Elevation Scale\n- **Level 0 (Base Canvas)**: Background fill `#f8fafc`. Flat, non-elevated.\n- **Level 1 (Cards, Worktables, Panels)**: `#ffffff` surface, bounded by a 1px border (`#e2e8f0`). Shadow: `0 1px 2px 0 rgba(15, 23, 42, 0.05)`.\n- **Level 2 (Hovered Cards, Popovers, Segmented Controls)**: Bounded by 1px border (`#cbd5e1`). Shadow: `0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04)`.\n- **Level 3 (Dropdown Menus, Modals, Slide-over Drawers)**: 1px border (`#cbd5e1`). Shadow: `0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05)`.\n- **Dark Structural Surfaces (Sidebar & Shell)**: `#0f172a` with internal dividers rendered via `#1e293b` (1px solid), avoiding dark shadows in favor of crisp boundary lines.\n\n## Shapes\n\nThe design system incorporates **Soft** curvature (`roundedness: 1`), utilizing controlled 4px to 8px radiuses. This geometry reflects modern enterprise engineering tools: structural, disciplined, and optimized for space efficiency without the sterility of pure sharp corners or the casual playfulness of circular pill treatments.\n\n### Corner Radius Mapping\n- **Micro Elements (Checkboxes, Status Dots, Tags)**: `0.25rem` (4px).\n- **Controls & Interactive Inputs (Buttons, Inputs, Selects, Tab Triggers)**: `0.375rem` (6px).\n- **Cards, Modals, Table Containers, Flyout Shells**: `0.5rem` (8px).\n- **Avatars & Pure Status Indicators**: Fully rounded `9999px` strictly for user identity and presence tracking.\n\n## Components\n\n### Buttons\n- **Primary**: Solid background `#0d9488`, text `#ffffff`, border transparent. Focus ring: 2px offset with `#0d9488`. Hover: `#14b8a6`. Active: `#0f766e`.\n- **Secondary / Outline**: Background `#ffffff`, text `#0f172a`, border 1px solid `#e2e8f0`. Hover: background `#f1f5f9`, border `#cbd5e1`.\n- **Ghost / Tertiary**: Background transparent, text `#64748b`. Hover: background `#f1f5f9`, text `#0f172a`.\n- **Sizes**: Small (28px height, 12px font), Default (36px height, 14px font), Large (42px height, 15px font). Padding: horizontal `0.75rem` to `1rem`.\n\n### Status Badges & Chips\n- Compact, non-intrusive metadata capsules. Height: 22px; padding: 2px 8px; radius: 4px.\n- Styled as semi-transparent background tints (10-15% opacity) accompanied by matching 1px border and high-contrast foreground text matching semantic rules (Slate, Sky Blue, Amber, Emerald, Crimson).\n\n### Data Tables & Task Lists\n- **Header Rows**: Height 36px, background `#f8fafc`, typography `caption` uppercase, 1px bottom border `#e2e8f0`.\n- **Data Rows**: Height 44px (compact standard), background `#ffffff`, alternating row hover `#f8fafc`. Active row selection marked with a 3px left vertical indicator in primary teal (`#0d9488`).\n- **Dividers**: Crisp 1px `#f1f5f9` horizontal lines; vertical cell gridlines omitted to avoid visual noise.\n\n### Form Inputs & Selects\n- Height: 36px. Background: `#ffffff`. Border: 1px solid `#cbd5e1`. Internal padding: `0.5rem 0.75rem`.\n- Focus state: Border color `#0d9488` with an ambient glow (`box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15)`).\n- Error state: Border color `#dc2626` with red glow (`box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15)`).\n- Label placement: Top-aligned, 4px spacing, `label-sm` weight, color `#334155`.\n\n### Checkboxes & Radio Controls\n- Dimensions: 16px x 16px. Border: 1.5px solid `#94a3b8`.\n- Checked state: Background `#0d9488`, border `#0d9488`, icon checkmark white.\n- Indeterminate state: Primary teal background with centered 8px horizontal white bar.\n\n### Cards & Container Panels\n- Background: `#ffffff`. Border: 1px solid `#e2e8f0`. Radius: 8px.\n- Internal padding: `1rem` standard for workspace boards (Kanban columns: 12px padding; inner task cards: 12px padding with 8px vertical gap).\n\n### Workspace-Specific Modules\n- **Drilling & Project Milestone Bar**: Segmented horizontal meter using primary teal (`#0d9488`) for executed milestones, sky blue (`#0284c7`) for active segments, and light slate (`#e2e8f0`) for pending steps.\n- **UAE Timezone / Shift Header Widget**: Monospaced timestamp badge displaying `GST (UTC+4)` with live operational shift indicators inside the deep navy shell bar.",
+          "font": "INTER",
+          "headlineFont": "INTER",
+          "headlineFontFamily": "Inter",
+          "labelFont": "INTER",
+          "labelFontFamily": "Inter",
+          "namedColors": {
+            "background": "#f8f9ff",
+            "error": "#ba1a1a",
+            "error_container": "#ffdad6",
+            "inverse_on_surface": "#eaf1ff",
+            "inverse_primary": "#6bd8cb",
+            "inverse_surface": "#213145",
+            "on_background": "#0b1c30",
+            "on_error": "#ffffff",
+            "on_error_container": "#93000a",
+            "on_primary": "#ffffff",
+            "on_primary_container": "#f4fffc",
+            "on_primary_fixed": "#00201d",
+            "on_primary_fixed_variant": "#005049",
+            "on_secondary": "#ffffff",
+            "on_secondary_container": "#5c647a",
+            "on_secondary_fixed": "#131b2e",
+            "on_secondary_fixed_variant": "#3f465c",
+            "on_surface": "#0b1c30",
+            "on_surface_variant": "#3d4947",
+            "on_tertiary": "#ffffff",
+            "on_tertiary_container": "#fdfcff",
+            "on_tertiary_fixed": "#001d31",
+            "on_tertiary_fixed_variant": "#004b73",
+            "outline": "#6d7a77",
+            "outline_variant": "#bcc9c6",
+            "primary": "#00685f",
+            "primary_container": "#008378",
+            "primary_fixed": "#89f5e7",
+            "primary_fixed_dim": "#6bd8cb",
+            "secondary": "#565e74",
+            "secondary_container": "#dae2fd",
+            "secondary_fixed": "#dae2fd",
+            "secondary_fixed_dim": "#bec6e0",
+            "surface": "#f8f9ff",
+            "surface_bright": "#f8f9ff",
+            "surface_container": "#e5eeff",
+            "surface_container_high": "#dce9ff",
+            "surface_container_highest": "#d3e4fe",
+            "surface_container_low": "#eff4ff",
+            "surface_container_lowest": "#ffffff",
+            "surface_dim": "#cbdbf5",
+            "surface_tint": "#006a61",
+            "surface_variant": "#d3e4fe",
+            "tertiary": "#006194",
+            "tertiary_container": "#007bb9",
+            "tertiary_fixed": "#cce5ff",
+            "tertiary_fixed_dim": "#93ccff"
+          },
+          "overrideNeutralColor": "#64748b",
+          "overridePrimaryColor": "#0d9488",
+          "overrideSecondaryColor": "#0f172a",
+          "overrideTertiaryColor": "#0284c7",
+          "roundness": "ROUND_FOUR",
+          "spacing": {
+            "gutter": "1rem",
+            "gutter-mobile": "0.75rem",
+            "margin": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-lg": "1rem",
+            "space-md": "0.75rem",
+            "space-sm": "0.5rem",
+            "space-xl": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xxl": "2rem",
+            "space-xxs": "0.125rem"
+          },
+          "spacingScale": 2,
+          "typography": {
+            "body-lg": {
+              "fontFamily": "Inter",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "lineHeight": "22px"
+            },
+            "body-md": {
+              "fontFamily": "Inter",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px"
+            },
+            "body-sm": {
+              "fontFamily": "Inter",
+              "fontSize": "13px",
+              "fontWeight": "400",
+              "lineHeight": "18px"
+            },
+            "caption": {
+              "fontFamily": "Inter",
+              "fontSize": "11px",
+              "fontWeight": "500",
+              "letterSpacing": "0.04em",
+              "lineHeight": "14px"
+            },
+            "code-num": {
+              "fontFamily": "JetBrains Mono",
+              "fontSize": "13px",
+              "fontWeight": "500",
+              "lineHeight": "18px"
+            },
+            "headline-lg": {
+              "fontFamily": "Inter",
+              "fontSize": "24px",
+              "fontWeight": "600",
+              "letterSpacing": "-0.015em",
+              "lineHeight": "32px"
+            },
+            "headline-lg-mobile": {
+              "fontFamily": "Inter",
+              "fontSize": "20px",
+              "fontWeight": "600",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "28px"
+            },
+            "headline-md": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "letterSpacing": "-0.01em",
+              "lineHeight": "26px"
+            },
+            "headline-sm": {
+              "fontFamily": "Inter",
+              "fontSize": "16px",
+              "fontWeight": "600",
+              "lineHeight": "24px"
+            },
+            "headline-xl": {
+              "fontFamily": "Inter",
+              "fontSize": "32px",
+              "fontWeight": "700",
+              "letterSpacing": "-0.02em",
+              "lineHeight": "40px"
+            },
+            "headline-xl-mobile": {
+              "fontFamily": "Inter",
+              "fontSize": "26px",
+              "fontWeight": "700",
+              "letterSpacing": "-0.015em",
+              "lineHeight": "34px"
+            },
+            "label-md": {
+              "fontFamily": "Inter",
+              "fontSize": "13px",
+              "fontWeight": "500",
+              "lineHeight": "18px"
+            },
+            "label-sm": {
+              "fontFamily": "Inter",
+              "fontSize": "12px",
+              "fontWeight": "600",
+              "letterSpacing": "0.02em",
+              "lineHeight": "16px"
+            }
+          }
+        }
+      },
+      "name": "assets/296371bb1df24dab9d42868e0b2bff9b",
+      "version": "1"
+    }
+  ]
+}
